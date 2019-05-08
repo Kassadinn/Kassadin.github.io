@@ -3,220 +3,393 @@
 <head>
 <title></title>
 </head>
-	<style type="text/css">
-		body{
-		  margin: 0;
-		  padding: 0;
-		  background: rgba(27, 27, 95, 0.8);
-		}
+<style type="text/css">
+body {
+  background: #161B29;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
-		canvas{
-		  position: absolute;
-		  top: -webkit-calc(50% - 250px);
-		  top: calc(50% - 250px);
-		  left: -webkit-calc(50% - 300px);
-		  left: calc(50% - 300px);
-		  width: 600px;
-		  height: 600px;
-		}
+.container {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
 
-		div{
-		  position: absolute;
-		  top: 5px;
-		  left: 5px;
-		  color: #fff;
-		  font-size: 40px;
-		  font-family: Arial;
-		}
+.common {
+  height: 5vw;
+  max-height: 100%;
+  overflow: auto;
+  width: 2vw;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  background-color: ;
+  border-radius: 0vw 10vw 0vw 10vw;
+  box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
+}
 
-	</style>
+.one {
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 7.5vw;
+}
+
+.two {
+  transform: rotate(90deg);
+  left: 5.5vw;
+  right: 0;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.three {
+  transform: rotate(135deg);
+  left: 7.5vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.four {
+  transform: rotate(180deg);
+  left: 5.5vw;
+  right: 0;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.five {
+  transform: rotate(225deg);
+  left: 0;
+  right: 0;
+  top: 7.5vw;
+  bottom: 0;
+}
+
+.six {
+  transform: rotate(270deg);
+  left: 0;
+  right: 5.5vw;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.seven {
+  transform: rotate(315deg);
+  left: 0;
+  right: 7.5vw;
+  top: 0;
+  bottom: 0;
+}
+
+.eight {
+  transform: rotate(360deg);
+  left: 0;
+  right: 5.5vw;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.bar {
+  width: 12vw;
+  height: .25vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16vw;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #E645D0;
+}
+
+.progress {
+  width: 12vw;
+  height: .5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #17E1E6;
+}
+
+.one {
+  animation: one 1s ease infinite;
+  -moz-animation: one 1s ease infinite;
+  /* Firefox */
+  -webkit-animation: one 1s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: one 1s ease infinite;
+  /* Opera */
+}
+
+@keyframes one {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.two {
+  animation: two 1s .125s ease infinite;
+  -moz-animation: two 1s .125s ease infinite;
+  /* Firefox */
+  -webkit-animation: two 1s .125s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: two 1s .125s ease infinite;
+  /* Opera */
+}
+
+@keyframes two {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.three {
+  animation: three 1s .25s ease infinite;
+  -moz-animation: three 1s .25s ease infinite;
+  /* Firefox */
+  -webkit-animation: three 1s .25s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: three 1s .25s ease infinite;
+  /* Opera */
+}
+
+@keyframes three {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.four {
+  animation: four 1s .375s ease infinite;
+  -moz-animation: four 1s .375s ease infinite;
+  /* Firefox */
+  -webkit-animation: four 1s .375s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: four 1s .375s ease infinite;
+  /* Opera */
+}
+
+@keyframes four {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.five {
+  animation: five 1s .5s ease infinite;
+  -moz-animation: five 1s .5s ease infinite;
+  /* Firefox */
+  -webkit-animation: five 1s .5s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: five 1s .5s ease infinite;
+  /* Opera */
+}
+
+@keyframes five {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.six {
+  animation: six 1s .625s ease infinite;
+  -moz-animation: six 1s .625s ease infinite;
+  /* Firefox */
+  -webkit-animation: six 1s .625s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: six 1s .625s ease infinite;
+  /* Opera */
+}
+
+@keyframes six {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.seven {
+  animation: seven 1s .750s ease infinite;
+  -moz-animation: seven 1s .750s ease infinite;
+  /* Firefox */
+  -webkit-animation: seven 1s .750s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: seven 1s .750s ease infinite;
+  /* Opera */
+}
+
+@keyframes seven {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.eight {
+  animation: eight 1s .875s ease infinite;
+  -moz-animation: eight 1s .875s ease infinite;
+  /* Firefox */
+  -webkit-animation: eight 1s .875s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: eight 1s .875s ease infinite;
+  /* Opera */
+}
+
+@keyframes eight {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.container {
+  animation: container 5s linear infinite;
+  -moz-animation: container 5s linear infinite;
+  /* Firefox */
+  -webkit-animation: container 5s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: container 5s linear infinite;
+  /* Opera */
+}
+
+@keyframes container {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.progress {
+  animation: progress 15s ease;
+  -moz-animation: progress 15s ease;
+  /* Firefox */
+  -webkit-animation: progress 15s ease;
+  /* Safari and Chrome */
+  -o-animation: progress 15s ease;
+  /* Opera */
+}
+
+@keyframes progress {
+  0% {
+    left: -24vw;
+  }
+  10% {
+    left: -20vw;
+  }
+  30% {
+    left: -16vw;
+  }
+  50% {
+    left: -12vw;
+  }
+  65% {
+    left: -10vw;
+  }
+  80% {
+    left: -4vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.fade-in {
+  animation: fade-in 2s ease;
+  -moz-animation: fade-in 2s ease;
+  /* Firefox */
+  -webkit-animation: fade-in 2s ease;
+  /* Safari and Chrome */
+  -o-animation: fade-in 2s ease;
+  /* Opera */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.out {
+  animation: out 2s 15s ease;
+  -moz-animation: out 2s 15s ease;
+  /* Firefox */
+  -webkit-animation: out 2s 15s ease;
+  /* Safari and Chrome */
+  -o-animation: out 2s 15s ease;
+  /* Opera */
+}
+
+@keyframes out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+</style>
 <body>
-	<canvas></canvas>
+<div class="out">
+  <div class="fade-in">
+    <div class="container">
+      <div class="one common"></div>
+      <div class="two common"></div>
+      <div class="three common"></div>
+      <div class="four common"></div>
+      <div class="five common"></div>
+      <div class="six common"></div>
+      <div class="seven common"></div>
+      <div class="eight common"></div>
+    </div>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
 </body>
-	<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
-	<script type="text/javascript">
-		var usr_color = 160; //Change value to change color scheme
+<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript">
 
-		window.requestAnimFrame = (function(){
-		  return  window.requestAnimationFrame || 
-		    window.webkitRequestAnimationFrame || 
-		    window.mozRequestAnimationFrame    || 
-		    window.oRequestAnimationFrame      || 
-		    window.msRequestAnimationFrame     ||  
-		    function( callback ){
-		    window.setTimeout(callback, 1000 / 60);
-		  };
-		})();
-
-		var canvas = document.getElementsByTagName("canvas")[0];
-		var dpr = window.devicePixelRatio || 1;
-		var rect = canvas.getBoundingClientRect();
-		var w = rect.width * dpr;
-		var h = rect.height * dpr;
-		canvas.width = w;
-		canvas.height = h;
-		var ctx = canvas.getContext('2d');
-		ctx.scale(dpr, dpr);
-
-		var arcs = [];
-
-		function init(){
-		  console.log("init called");
-		  reset();
-		  arcs = [];
-		  var m = new arc();
-		  m.class = "month";
-		  arcs.push(m);
-
-		  var d = new arc();
-		  d.class = "date";
-		  d.r = 135;
-		  arcs.push(d);
-
-		  var d = new arc();
-		  d.class = "day";
-		  d.r = 170;
-		  arcs.push(d);
-
-		  var h = new arc();
-		  h.class = "hours";
-		  h.r = 205;
-		  arcs.push(h);
-
-		  var m = new arc();
-		  m.class = "mins";
-		  m.r = 240;
-		  arcs.push(m);
-
-		  var s = new arc();
-		  s.class = "secs";
-		  s.r = 275;
-		  arcs.push(s);
-		}
-
-		function arc(){
-		  this.class = "month";
-		  this.r = 100;
-		  this.rot = 1;
-
-		  this.draw = function(){
-		    ctx.beginPath();
-		    ctx.arc(300,300,this.r,(Math.PI/(2/3)),this.rot,false);
-		    ctx.lineWidth = 30;
-		    ctx.strokeStyle = "hsla("+(this.rot*(180/Math.PI)+usr_color)+",60%,50%,1)";
-		    ctx.stroke();
-    
-		    ctx.save();
-		    ctx.fillStyle = "rgba(0, 0, 48, 1)";
-		    ctx.translate(300, 300);
-		    ctx.rotate(this.rot);
-		    ctx.font="bold 14px Arial";
-		    if(this.class == "secs"){
-		      var d = new Date();
-		      ctx.fillText(d.getSeconds(), 267, -5);
-		    }
-		    else if(this.class == "mins"){
-		      var d = new Date();
-		      ctx.fillText(d.getMinutes(), 232, -5);
-		    }
-		    else if(this.class == "hours"){
-		      var d = new Date();
-		      ctx.fillText(d.getHours(), 197, -5);
-		    }
-		    else if(this.class == "day"){
-		      var d = new Date();
-		      var day = d.getDay();
-		      if(day == 1){
-			var day = "Mon"
-		      }
-		      else if(day == 2){
-			var day = "Tue"
-		      }
-		      else if(day == 3){
-			var day = "Wed"
-		      }
-		      else if(day == 4){
-			var day = "Thu"
-		      }
-		      else if(day == 5){
-			var day = "Fri"
-		      }
-		      else if(day == 6){
-			var day = "Sat"
-		      }
-		      else if(day == 7){
-			var day = "Sun"
-		      }
-		      ctx.fillText(day, 158, -5);
-		    }
-		    else if(this.class == "date"){
-		      var d = new Date();
-		      ctx.fillText(d.getDate(), 127, -5);
-		    }
-		    else if(this.class == "month"){
-		      var d = new Date();
-		      ctx.fillText(d.getMonth()+1, 93, -5);
-		    }
-		    ctx.restore();
-		  }
-		}
-
-		function reset(){
-		  ctx.fillStyle = "rgba(27, 27, 95, 0.8)";
-		  ctx.fillRect(0,0,w,h);
-		}
-
-		function draw(){
-		  reset();
-		  ctx.fillStyle = "rgba(255,255,255,0.8)";
-		  ctx.font = "12px Arial"
-		  ctx.fillText("seconds", 250, 27);
-		  ctx.fillText("minutes", 252, 63);
-		  ctx.fillText("hours", 264, 98);
-		  ctx.fillText("day", 274, 134);
-		  ctx.fillText("date", 270, 168);
-		  ctx.fillText("month", 260, 203);
-
-		  for(var i=0;i<arcs.length;i++){
-		    var a = arcs[i];
-		    var d = new Date();
-		    if(a.class == "month"){
-		      var n = d.getMonth()+1;
-		      a.rot = (n/12)*(Math.PI*2) - (Math.PI/2);
-		    }
-		    else if(a.class == "date"){
-		      var n = d.getDate();
-		      a.rot = (n/31)*(Math.PI*2) - (Math.PI/2);
-		    }
-		    else if(a.class == "day"){
-		      var n = d.getDay();
-		      a.rot = (n/7)*(Math.PI*2) - (Math.PI/2);
-		    }
-		    else if(a.class == "hours"){
-		      var n = d.getHours();
-		      var m = d.getMinutes();
-		      a.rot = ((n/12)*(Math.PI*2) - (Math.PI/2)) + ((m/3600)*(Math.PI*2));
-		    }
-		    else if(a.class == "mins"){
-		      var n = d.getMinutes();
-		      var s = d.getSeconds();
-		      a.rot = ((n/60)*(Math.PI*2) - (Math.PI/2)) + ((s/3600)*(Math.PI*2));
-		    }
-		    else if(a.class == "secs"){
-		      var n = d.getSeconds();
-		      var m = d.getMilliseconds();
-		      a.rot = ((n/60)*(Math.PI*2) - (Math.PI/2)) + ((m/60000)*(Math.PI*2));
-		    }
-		    a.draw();
-		  }
-		}
-
-		function animloop() {
-		  draw();
-		  requestAnimFrame(animloop); 
-		}
-
-		init();
-		animloop();
-	</script>
+</script>
 </html>
